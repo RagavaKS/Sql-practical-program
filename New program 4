@@ -1,0 +1,42 @@
+CREATE TABLE dept (
+deptid NUMBER(2) CONSTRAINT dept_pk PRIMARY KEY, deptname VARCHAR(20).
+loc VARCHAR (10)
+);
+INSERT INTO dept VALUES (1, cs", INSERT INTO dept VALUES (2, Pcs"
+"cbe*);
+"cbe*) :
+INSERT INTO dept VALUES (3, it'
+"che'):
+INSERT INTO dept VALUES (4, ct*, 'erd*):
+CREATE TABLE empl (
+empid NUMBER(4) CONSTRAINT empl_ pk PRIMARY KEY, empname VARCHAR (10) ,
+deptid NUMBER(2) CONSTRAINT emp deptid_fk REFERENCES dept (deptid)
+INSERT INTO empl VALUES (101, aa', 1);
+INSERT INTO empl VALUES (102, bb', 2);
+INSERT INTO empl VALUES (103,
+"cc"
+1) ;
+INSERT INTO empl VALUES (104, dd, 3):
+SELECT d. deptname, e. empname FROM dept d
+JOIN empl e ON d.deptid = e.deptid
+WHERE d.deptid = 2
+ORDER BY d. deptname;
+SELECT d. deptname, e. empname FROM dept d
+LEFT OUTER JOIN emple ON d.deptid = e. deptid
+WHERE d.deptid › 2
+ORDER BY d. deptnames
+SELECT d. deptname, e. empname FROM dept d
+RIGHT OUTER JOIN emple ON d.deptid = e. deptid
+WHERE d.deptid > 2
+ORDER BY d. deptnames
+SELECT d.deptname, e. empname
+FROM dept d
+FULL OUTER JOIN emple ON d. deptid = e. deptid
+WHERE d.deptid > 2
+ORDER BY d. deptname,
+SELECT d. deptname, e. empname
+FROM dept
+d
+CROSS JOIN emple
+WHERE d.deptid > 2
+ORDER BY d. deptname:
